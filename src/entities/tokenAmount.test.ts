@@ -1,6 +1,6 @@
 // pnpm test tokenAmount.test.ts
 
-import { ChainId, NATIVE_ASSETS, TokenAmount } from '@balancer/sdk';
+import { ChainId, NATIVE_ASSETS, TokenAmount } from '@beets/b-sdk';
 import { parseUnits } from 'viem';
 
 const weth = NATIVE_ASSETS[ChainId.MAINNET];

@@ -23,7 +23,7 @@
         "baseUrl": ".",
         "paths": {
             "@/*": ["./src/*"],
-            "@balancer/sdk": ["src/index.ts"]
+            "@beets/b-sdk": ["src/index.ts"]
         }
     }
 }

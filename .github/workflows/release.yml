@@ -2,7 +2,6 @@ name: Release
 
 on:
   workflow_call:
-  workflow_dispatch:
 
 permissions:
   id-token: write  # Required for npm OIDC trusted publishing
@@ -12,6 +11,7 @@ permissions:
 jobs:
   release:
     name: Release
+    if: github.repository == 'beethovenxfi/b-sdk' && github.ref == 'refs/heads/main'
     runs-on: macos-latest
     strategy:
       matrix:
@@ -38,5 +38,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Empty string so changesets/action uses OIDC instead of a classic token.
-          # Trusted publisher must be configured for main.yml on npm.
+          # Configure @beets/b-sdk to trust beethovenxfi/b-sdk, workflow main.yml.
           NPM_TOKEN: ''

@@ -1,13 +1,14 @@
 {
-    "name": "@balancer/sdk",
-    "description": "SDK for interacting with the Balancer protocol",
+    "name": "@beets/b-sdk",
+    "description": "Beets SDK for interacting with the Balancer protocol",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/balancer/b-sdk"
+        "url": "https://github.com/beethovenxfi/b-sdk"
     },
     "publishConfig": {
-        "access": "public"
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
     },
     "version": "6.2.0",
     "main": "dist/index.js",

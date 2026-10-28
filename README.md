@@ -1,8 +1,24 @@
-# SDK
+# Beets SDK
 
-[![npm version](https://img.shields.io/npm/v/@balancer/sdk/latest.svg)](https://www.npmjs.com/package/@balancer/sdk/v/latest)
+[![npm version](https://img.shields.io/npm/v/@beets/b-sdk/latest.svg)](https://www.npmjs.com/package/@beets/b-sdk/v/latest)
 
-WIP SDK for Balancer Protocol. Interfaces may have frequent breaking changes until a stable release.
+Beets SDK for the Balancer protocol, maintained in [beethovenxfi/b-sdk](https://github.com/beethovenxfi/b-sdk) and based on the upstream Balancer SDK.
+
+## Installation
+
+```sh
+npm install @beets/b-sdk
+```
+
+```ts
+import { Token, TokenAmount } from '@beets/b-sdk';
+```
+
+When migrating from `@balancer/sdk`, install `@beets/b-sdk` and update package imports. The exported API is unchanged by the rename.
+
+## Publishing
+
+See [the release guide](https://github.com/beethovenxfi/b-sdk/blob/main/PUBLISHING.md) for npm setup, the first publication, and the Changesets release workflow.
 
 ## Local Setup
 
